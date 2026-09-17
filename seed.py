@@ -16,8 +16,5 @@ def popular_banco(session):
     livro6 = Livro(titulo="Crime e Castigo", ano=1866, autor=autor3)
     livro7 = Livro(titulo="Capitães da Areia", ano=1937, autor=autor4)
 
-    session.add_all([
-        autor1, autor2, autor3, autor4,
-        livro1, livro2, livro3, livro4, livro5, livro6, livro7
-    ])
+    session.add_all([autor1, autor2, autor3, autor4, livro1, livro2, livro3, livro4, livro5, livro6, livro7])
     session.commit()
